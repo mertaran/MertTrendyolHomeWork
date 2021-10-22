@@ -18,8 +18,6 @@ public class TestCase extends BaseTest {
         String title = "En Trend Ürünler Türkiye'nin Online Alışveriş Sitesi Trendyol'da";
         String email = "merttestinium@gmail.com";
         String password = "aranmert1";
-        String price = "99,90 TL";
-
         MainPage mainPage = new MainPage(driver);
         String webDriverTitle = mainPage.getHomePageTitle();
         Log4j.info("Title : " + webDriverTitle);
@@ -47,6 +45,7 @@ public class TestCase extends BaseTest {
         addToBasketAndFav.addBasketButton();
         TimeUnit.SECONDS.sleep(3);
         addToBasketAndFav.addFavButton();
+        TimeUnit.SECONDS.sleep(3);
         Log4j.info("Product price information is received.");
         addToBasketAndFav.priceList();
         System.out.println("Price Eşit :" + addToBasketAndFav.getPrice1());

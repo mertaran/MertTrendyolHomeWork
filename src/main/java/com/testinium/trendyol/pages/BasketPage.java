@@ -7,7 +7,6 @@ public class BasketPage extends BasePage {
     By basketPage = By.cssSelector("a[class='link account-basket']");
     By deleteProduct = By.cssSelector("i[class='i-trash']");
     By secondDeleteBTN = By.cssSelector("button[class='ty-font-w-semi-bold ty-button ty-bordered ty-transition ty-input-medium ty-primary']");
-    String dataid = "53629462";
     By dataID = By.cssSelector("div[data-id='53629462']");
     By favCancelBTN = By.cssSelector("i[class='i-close']");
     By gotoFavPage = By.cssSelector("div[class='link']");
